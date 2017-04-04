@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rishi Vision</title>
+</head>
+<body>
+<form method="POST", action="/home" method='post' enctype='multipart/form-data' encoding='multipart/form-data'>
+	<input type="file" name="file">
+	<input type="submit" name="okay">
+</form>
+{% for label in Labels%}
+{{ label }}
+<br>
+{% endfor %}
+</body>
+</html>
